@@ -44,6 +44,15 @@ model = keras.Sequential([
     layers.Dense(3)  # A saída possui 3 neurônios, um para cada zona de consumo.
 ])
 
+# Salvar modelo
+model.save("0-Dataset/my_model.h5")
+
+# Salvar scalers
+import joblib
+joblib.dump(scaler_x, 'scaler_x.pkl')
+joblib.dump(scaler_y, 'scaler_y.pkl')
+
+
 model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 
 # 5. Treinamento
