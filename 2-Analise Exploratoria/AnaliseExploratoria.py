@@ -62,7 +62,7 @@ for idx_zone, zone in enumerate(zones, 1):
         plt.grid(True)
 
 # Salva a figura combinada no Google Drive (opcional)
-plt.savefig('2 - Analise Exploratoria/Imagens/scatter_plots_all_zones.png')
+plt.savefig('2-Analise Exploratoria/Imagens/scatter_plots_all_zones.png')
 
 plt.tight_layout()
 plt.show()
